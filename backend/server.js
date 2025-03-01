@@ -1,27 +1,21 @@
-require('dotenv').config();
-const express = require('express');
-const connectDB = require('./config/db');
-const expenseRoutes = require('./routes/expenseRoutes');
-const errorHandler = require('./middleware/errorHandler');
-
-const app = express();
-
-// Connect to MongoDB
-connectDB();
-
-app.use(express.json());
-
-// Middleware
-app.use(express.json());
-
-// Routes
-app.use('/api/expenses', expenseRoutes);
-
-// Error handler middleware
-app.use(errorHandler);
+import express from "express";
+import cors from "cors";
+import "./loadEnvironment.mjs";
+import record_expenses from "./routes/record_expenses.js";
+import api_login from "./routes/api_login.js";
+import api_register from "./routes/api_register.js";
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+const app = express();
 
+app.use(cors());
+app.use(express.json());
 
+app.use("/expenses", record_expenses);
+app.use('/login', api_login);
+app.use("/register", api_register); 
 
+// start the Express server
+app.listen(PORT, () => {
+  console.log(`Server is running on port: ${PORT}`);
+});
