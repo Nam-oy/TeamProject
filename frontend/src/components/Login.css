@@ -1,0 +1,58 @@
+/* Center the login form */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Style the form */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Style inputs */
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style login button */
+  .login-form button {
+    width: 100%;
+    background-color: #f18000;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .login-form button:hover {
+    background-color: #e56407;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .login-container {
+      width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+    }
+    
+    .login-form input,
+    .login-form button {
+      font-size: 0.9rem;
+    }
+  }
+  

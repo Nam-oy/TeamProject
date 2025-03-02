@@ -1,0 +1,72 @@
+/* Container styling */
+.add_expense-container {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .add_expense-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form styling */
+  .add_expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+  }
+  
+  /* Input fields styling */
+  .add_expense-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    margin-top: 10px;
+  }
+  
+  /* Input focus effect */
+  .add_expense-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Button styling */
+  .add_expense-button {
+    margin-right: 4px;
+    width: 9rem;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Button hover effect */
+  .add_expense-button:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 480px) {
+    .add_expense-container {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  

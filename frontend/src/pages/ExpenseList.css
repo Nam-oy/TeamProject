@@ -1,0 +1,122 @@
+.expense-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Filters - Flexbox for responsiveness */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filters input,
+.filters select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Table Styles */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.expense-table th,
+.expense-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.expense-table th {
+  background-color: #f4f4f4;
+}
+
+
+  /* Button styling */
+  .expense-button {
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 5px;
+  }
+  
+  /* Button hover effect */
+  .expense-button:hover {
+    background: #0056b3;
+  }
+  
+
+   /* Button styling */
+   .edit_expense-button {
+    margin-right: 4px;
+    width: 5rem;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background: #ffac1cfe;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 5px;
+  }
+  
+  /* Button hover effect */
+  .edit_expense-button:hover {
+    background: #ff6f00;
+  }
+
+   /* Button styling */
+   .del_expense-button {
+    width: 5rem;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background: #ff2a00aa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 5px;
+  }
+  
+  /* Button hover effect */
+  .del_expense-button:hover {
+    background: #ef0101;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .filters input,
+  .filters select {
+    width: 100%;
+  }
+
+  .expense-table th,
+  .expense-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
